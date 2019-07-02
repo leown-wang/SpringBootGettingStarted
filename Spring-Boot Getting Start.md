@@ -57,9 +57,76 @@ Spring Boot 其实就是由 Pivotal 团队提供的一个框架，其设计目�
 
 单单从搭建 Spring  项目的角度来看就已经足够彰显其简单、快速、方便的特性了。
 
-
+## 使用 Spring Boot 的 Java 注释和 XML Bean 配置
 
 https://www.springboottutorial.com/spring-boot-java-xml-context-configuration
+
+#### Loading Beans from Java Configuration
+
+>  src/main/java/test/configuration/JavaConfiguration.java
+
+在` JavaConfiguration.java `中定义 Beans ;
+
+```java
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class JavaConfiguration {
+	
+	@Bean
+	public String someDummyBean1() {
+		return "someDummyBean1";
+	}
+	
+	@Bean
+	public String someDummyBean2() {
+		return "someDummyBean2";
+	}
+
+}
+```
+
+
+
+#### Loading Beans from XML Configuration
+
+> src/main/resources/applicationContext.xml
+
+在` applicationContext.xml `中定义 Beans ;
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- <context:component-scan base-package="com.in28minutes.spring.basics"/> -->
+
+	<bean id="xmlStringBean1" class="java.lang.String">
+		<constructor-arg value="stringBean1" />
+	</bean>
+
+	<bean id="xmlStringBean2" class="java.lang.String">
+		<constructor-arg value="stringBean2" />
+	</bean>
+
+</beans>
+```
+
+>  src/main/java/test/configuration/XmlConfiguration.java
+
+在` XmlConfiguration.java `中引入`applicationContext.xml` ;
+
+``` java
+@Configuration
+@ImportResource({"classpath*:applicationContext.xml"})
+public class XmlConfiguration {
+}
+```
 
 
 
