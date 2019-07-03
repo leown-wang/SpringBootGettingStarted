@@ -1,9 +1,14 @@
 package hello.service;
 
+import hello.entity.User;
 import hello.mapper.UserMapper;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import javax.inject.Inject;
 
+@Service
+@Component
 public class UserService {
     private UserMapper userMapper;
 
@@ -15,5 +20,4 @@ public class UserService {
     public User getUserById(Integer id){
         return userMapper.findUserById(id);
     }
-
 }
