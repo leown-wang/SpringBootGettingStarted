@@ -52,7 +52,7 @@ public class AuthController {
                 User loggedInUser = new User(1,"leown");
                 return new Result("OK","login success",true,loggedInUser);
             }catch (BadCredentialsException e){
-                return new Result("ok","password wroing！",false);
+                return new Result("ok","password wrong！",false);
             }
     }
     private static  class Result{
