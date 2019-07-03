@@ -29,6 +29,8 @@ Spring Boot 其实就是由 Pivotal 团队提供的一个框架，其设计目�
 
 而 Spring Boot ？
 
+这是官方的 [Getting Started](https://spring.io/guides/gs/spring-boot/) 文档，
+
 ![Spring Initializr](https://s2.ax1x.com/2019/07/01/ZGeKNF.png)
 
 然后 Next 到底。
@@ -57,76 +59,9 @@ Spring Boot 其实就是由 Pivotal 团队提供的一个框架，其设计目�
 
 单单从搭建 Spring  项目的角度来看就已经足够彰显其简单、快速、方便的特性了。
 
-## 使用 Spring Boot 的 Java 注释和 XML Bean 配置
+
 
 https://www.springboottutorial.com/spring-boot-java-xml-context-configuration
-
-#### Loading Beans from Java Configuration
-
->  src/main/java/test/configuration/JavaConfiguration.java
-
-在` JavaConfiguration.java `中定义 Beans ;
-
-```java
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-
-@Configuration
-public class JavaConfiguration {
-	
-	@Bean
-	public String someDummyBean1() {
-		return "someDummyBean1";
-	}
-	
-	@Bean
-	public String someDummyBean2() {
-		return "someDummyBean2";
-	}
-
-}
-```
-
-
-
-#### Loading Beans from XML Configuration
-
-> src/main/resources/applicationContext.xml
-
-在` applicationContext.xml `中定义 Beans ;
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans
-        http://www.springframework.org/schema/beans/spring-beans.xsd
-        http://www.springframework.org/schema/context
-        http://www.springframework.org/schema/context/spring-context.xsd">
-
-	<!-- <context:component-scan base-package="com.in28minutes.spring.basics"/> -->
-
-	<bean id="xmlStringBean1" class="java.lang.String">
-		<constructor-arg value="stringBean1" />
-	</bean>
-
-	<bean id="xmlStringBean2" class="java.lang.String">
-		<constructor-arg value="stringBean2" />
-	</bean>
-
-</beans>
-```
-
->  src/main/java/test/configuration/XmlConfiguration.java
-
-在` XmlConfiguration.java `中引入`applicationContext.xml` ;
-
-``` java
-@Configuration
-@ImportResource({"classpath*:applicationContext.xml"})
-public class XmlConfiguration {
-}
-```
 
 
 
@@ -136,7 +71,7 @@ public class XmlConfiguration {
 
 https://blogs.msdn.microsoft.com/jcorioland/2016/10/13/getting-started-with-windows-containers/
 
-
+https://blog.jcorioland.io/archives/2016/10/13/getting-started-with-windows-containers.html
 
 https://hub.docker.com/_/mysql
 
@@ -149,3 +84,9 @@ https://hub.docker.com/_/mysql
 ORM(Object Relationship Mapping)
 
 通过 MyBatis 实现 ORM
+
+## 关于 Spring Security
+
+http://www.spring4all.com/article/428
+
+https://spring.io/guides/gs/securing-web/
