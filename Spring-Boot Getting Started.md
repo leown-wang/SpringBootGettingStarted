@@ -90,3 +90,9 @@ ORM(Object Relationship Mapping)
 http://www.spring4all.com/article/428
 
 https://spring.io/guides/gs/securing-web/
+
+
+
+可实现密码加密功能，非加密会报500；
+
+可实现cookie存储功能；
