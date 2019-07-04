@@ -1,6 +1,7 @@
 package hello.controller;
 
 import hello.entity.User;
+import hello.service.UserService;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -14,16 +15,18 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.inject.Inject;
+import javax.naming.spi.ResolveResult;
 import java.util.Map;
 
 @Controller
 public class AuthController {
-    private UserDetailsService userDetailsService;
+    private UserService userService;
     private AuthenticationManager authenticationManager;
 
     @Inject
-    public AuthController(UserDetailsService userDetailsService, AuthenticationManager authenticationManager) {
-        this.userDetailsService = userDetailsService;
+    public AuthController(UserService userService, AuthenticationManager authenticationManager) {
+        this.userService = userService;
+
         this.authenticationManager = authenticationManager;
 
     }
@@ -31,7 +34,14 @@ public class AuthController {
     @GetMapping("/auth")
     @ResponseBody
     public  Object auth(){
-        return new Result("ok","unlogin！",false);
+        String username = SecurityContextHolder.getContext().getAuthentication().getName();
+        User loggedInUser = userService.getUserByUsername(username);
+        if (loggedInUser == null){
+            return new Result("ok","unlogin！",false);
+        }else {
+            return  new Result("ok",null,true,loggedInUser);
+        }
+
     }
     @PostMapping("/auth/login")
     @ResponseBody
@@ -40,7 +50,7 @@ public class AuthController {
             String password = (String) usernameAndPasswordJson.get("password");
             UserDetails userDetails = null;
             try{
-               userDetails = userDetailsService.loadUserByUsername(username);
+               userDetails = userService.loadUserByUsername(username);
             }catch (UsernameNotFoundException e){
                 return  new Result("fail","user not exist",false);
             }
@@ -48,9 +58,7 @@ public class AuthController {
             try{
                 authenticationManager.authenticate(usernamePasswordAuthenticationToken);
                 SecurityContextHolder.getContext().setAuthentication(usernamePasswordAuthenticationToken);
-
-                User loggedInUser = new User(1,"leown");
-                return new Result("OK","login success",true,loggedInUser);
+                return new Result("OK","login success",true,userService.getUserByUsername(username));
             }catch (BadCredentialsException e){
                 return new Result("ok","password wrong！",false);
             }
@@ -60,6 +68,11 @@ public class AuthController {
         String msg;
         boolean isLogin;
         Object data;
+
+        public Object getData() {
+            return data;
+        }
+
         public String getStatus() {
             return status;
         }
@@ -83,7 +96,4 @@ public class AuthController {
             this.data = data;
         }
     }
-
-
-
 }

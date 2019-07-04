@@ -18,7 +18,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 @Service
 public class UserService implements UserDetailsService {
-    private Map<String,String> userPasswords = new ConcurrentHashMap<>();
+    private Map<String,User> users = new ConcurrentHashMap<>();
     private BCryptPasswordEncoder bCryptPasswordEncoder;
 
     @Inject
@@ -32,19 +32,20 @@ public class UserService implements UserDetailsService {
 //    }
 
     public void save(String username,String password){
-        userPasswords.put(username,bCryptPasswordEncoder.encode(password));
+        users.put(username,new User(1,username,bCryptPasswordEncoder.encode(password)));
     }
 
-    public String getPassword(String username){
-        return userPasswords.get(username);
+
+    public User getUserByUsername(String username){
+        return users.get(username);
     }
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        if (!userPasswords.containsKey(username)){
+        if (!users.containsKey(username)){
             throw  new UsernameNotFoundException(username+"not exist!");
         }
-       String password = userPasswords.get(username);
-        return  new org.springframework.security.core.userdetails.User(username,password, Collections.emptyList());
+       User user = users.get(username);
+        return  new org.springframework.security.core.userdetails.User(username,user.getPassword(), Collections.emptyList());
     }
 }
