@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c81657a-74a0-417f-9d3e-2fa8ddab5afd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6d933967-041b-48a7-97cb-0c045b7232f3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6d933967-041b-48a7-97cb-0c045b7232f3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hello/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/mapper/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hello/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/gs-spring-boot.kotlin_module" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -67,14 +65,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/AuthController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-332">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="-204">
+              <caret line="62" column="64" lean-forward="true" selection-start-line="62" selection-start-column="64" selection-end-line="62" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3014#3015#0" expanded="true" />
-                <element signature="e#3049#3050#0" expanded="true" />
-                <element signature="e#3258#3259#0" expanded="true" />
-                <element signature="e#3311#3312#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,12 +77,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/hello/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+            <state relative-caret-position="328">
+              <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1402#1403#0" expanded="true" />
-                <element signature="e#1424#1425#0" expanded="true" />
+                <element signature="e#1412#1413#0" expanded="true" />
+                <element signature="e#1470#1471#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,8 +91,67 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6d933967-041b-48a7-97cb-0c045b7232f3/console_1.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="20" />
+            <state relative-caret-position="171">
+              <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hello/entity/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+              <folding>
+                <element signature="e#508#509#0" expanded="true" />
+                <element signature="e#545#546#0" expanded="true" />
+                <element signature="e#573#574#0" expanded="true" />
+                <element signature="e#608#609#0" expanded="true" />
+                <element signature="e#639#640#0" expanded="true" />
+                <element signature="e#687#688#0" expanded="true" />
+                <element signature="e#727#728#0" expanded="true" />
+                <element signature="e#762#763#0" expanded="true" />
+                <element signature="e#793#794#0" expanded="true" />
+                <element signature="e#841#842#0" expanded="true" />
+                <element signature="e#881#882#0" expanded="true" />
+                <element signature="e#914#915#0" expanded="true" />
+                <element signature="e#943#944#0" expanded="true" />
+                <element signature="e#987#988#0" expanded="true" />
+                <element signature="e#1023#1024#0" expanded="true" />
+                <element signature="e#1059#1060#0" expanded="true" />
+                <element signature="e#1090#1091#0" expanded="true" />
+                <element signature="e#1139#1140#0" expanded="true" />
+                <element signature="e#1179#1180#0" expanded="true" />
+                <element signature="e#1215#1216#0" expanded="true" />
+                <element signature="e#1246#1247#0" expanded="true" />
+                <element signature="e#1295#1296#0" expanded="true" />
+                <element signature="e#1335#1336#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://6d933967-041b-48a7-97cb-0c045b7232f3/schema/DB2019/table/user">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state projectRestartId="35c32b40-e4e6-4a68-9f80-1c129db10fe4">
+              <filtering>
+                <filter text="" />
+              </filtering>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hello/configuration/WebSecurityConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2221#2222#0" expanded="true" />
+                <element signature="e#2271#2272#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,8 +159,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hello/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="75">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#415#416#0" expanded="true" />
@@ -120,8 +173,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hello/mapper/UserMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="66" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
+            <state relative-caret-position="361">
+              <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -177,8 +230,9 @@
         <option value="$PROJECT_DIR$/src/main/java/hello/configuration/JavaConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/controller/AuthController.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/6d933967-041b-48a7-97cb-0c045b7232f3/console_1.sql" />
         <option value="$PROJECT_DIR$/src/main/java/hello/mapper/UserMapper.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/6d933967-041b-48a7-97cb-0c045b7232f3/console_1.sql" />
         <option value="$PROJECT_DIR$/src/main/java/hello/service/UserService.java" />
       </list>
     </option>
@@ -220,6 +274,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -322,7 +377,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -410,17 +464,18 @@
       <workItem from="1562122560670" duration="17307000" />
       <workItem from="1562155332227" duration="6659000" />
       <workItem from="1562201012079" duration="13888000" />
+      <workItem from="1562229456397" duration="313000" />
+      <workItem from="1562229805083" duration="3297000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63125000" />
+    <option name="totallyTimeSpent" value="66735000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24932976" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25603217" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -430,27 +485,28 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30169973" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.86126006" weight="0.51983005" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32956153" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.5636729" side_tool="true" visible="true" weight="0.33002833" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32956153" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="15" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="13" weight="0.3286119" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Console" order="15" sideWeight="0.43632707" visible="true" weight="0.33002833" />
+      <window_info anchor="right" id="Coverage" sideWeight="0.5063291" side_tool="true" weight="0.36662197" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" weight="0.3297587" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.3297587" />
+      <window_info anchor="right" id="Database" order="6" sideWeight="0.49367088" weight="0.36662197" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.3297587" />
@@ -516,6 +572,11 @@
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/gs_spring_boot$Application.ic" NAME="Application Coverage Results" MODIFIED="1562231251502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>hello.*</FILTER>
+    </SUITE>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -735,6 +796,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#477#478#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6d933967-041b-48a7-97cb-0c045b7232f3/schema/DB2019/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="35c32b40-e4e6-4a68-9f80-1c129db10fe4">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6d933967-041b-48a7-97cb-0c045b7232f3/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/configuration/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2221#2222#0" expanded="true" />
+            <element signature="e#2271#2272#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hello/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -767,68 +878,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/configuration/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="53" column="57" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2271#2272#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/AuthController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-332">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3014#3015#0" expanded="true" />
-            <element signature="e#3049#3050#0" expanded="true" />
-            <element signature="e#3258#3259#0" expanded="true" />
-            <element signature="e#3311#3312#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="66" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
+        <state relative-caret-position="-204">
+          <caret line="62" column="64" lean-forward="true" selection-start-line="62" selection-start-column="64" selection-end-line="62" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6d933967-041b-48a7-97cb-0c045b7232f3/console_1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hello/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        <state relative-caret-position="328">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1402#1403#0" expanded="true" />
-            <element signature="e#1424#1425#0" expanded="true" />
+            <element signature="e#1412#1413#0" expanded="true" />
+            <element signature="e#1470#1471#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -883,11 +950,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring|gs-spring-boot</last-edited>
+          <last-edited>gs-spring-boot</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

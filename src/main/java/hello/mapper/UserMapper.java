@@ -11,7 +11,7 @@ public interface UserMapper {
     @Select("SELECT * FROM USER WHERE id = #{id}")
     User findUserById(@Param("id") Integer id);
 
-    @Select("select * from user where id = #{username}")
+    @Select("select * from user where username = #{username}")
     User findUserByname(@Param("username") String username);
 
     @Select("insert into user(username,password,created_at,updated_at)"+
