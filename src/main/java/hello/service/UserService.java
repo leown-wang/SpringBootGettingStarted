@@ -18,34 +18,34 @@ import java.util.concurrent.ConcurrentHashMap;
 
 @Service
 public class UserService implements UserDetailsService {
-    private Map<String,User> users = new ConcurrentHashMap<>();
+//    private Map<String,User> users = new ConcurrentHashMap<>();
     private BCryptPasswordEncoder bCryptPasswordEncoder;
-
+    private UserMapper userMapper;
     @Inject
-    public UserService(BCryptPasswordEncoder bCryptPasswordEncoder) {
+    public UserService(BCryptPasswordEncoder bCryptPasswordEncoder,UserMapper userMapper) {
         this.bCryptPasswordEncoder = bCryptPasswordEncoder;
-        save("gebilaowang","gebilaowang");
+        this.userMapper = userMapper;
+        save("user","123");
+                
+//        save("user","123");
     }
 
-//    public UserService(){
-//        userPasswords.put("gebilaowang","gebilaowang");
-//    }
-
     public void save(String username,String password){
-        users.put(username,new User(1,username,bCryptPasswordEncoder.encode(password)));
+        userMapper.save(username,bCryptPasswordEncoder.encode(password));
+//        users.put(username,new User(1,username,bCryptPasswordEncoder.encode(password)));
     }
 
 
     public User getUserByUsername(String username){
-        return users.get(username);
+        return userMapper.findUserByname(username);
     }
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        if (!users.containsKey(username)){
+        User user = getUserByUsername(username);
+        if (user == null){
             throw  new UsernameNotFoundException(username+"not exist!");
         }
-       User user = users.get(username);
         return  new org.springframework.security.core.userdetails.User(username,user.getPassword(), Collections.emptyList());
     }
 }
