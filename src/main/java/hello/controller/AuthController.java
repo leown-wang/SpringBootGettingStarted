@@ -43,6 +43,46 @@ public class AuthController {
         }
 
     }
+
+    @GetMapping("/auth/logout")
+    @ResponseBody
+    public Result logout(){
+        String username = SecurityContextHolder.getContext().getAuthentication().getName();
+        User loggedInUser = userService.getUserByUsername(username);
+
+        if(loggedInUser == null){
+            return  new Result("fail","unlogin!",false);
+        }else {
+            SecurityContextHolder.clearContext();
+            return new Result("ok","success",false);
+        }
+    }
+
+    @PostMapping("/auth/register")
+    @ResponseBody
+    public  Result register(@RequestBody Map<String,Object> usernameAndPasswordJson){
+        String username = (String) usernameAndPasswordJson.get("username");
+        String password = (String) usernameAndPasswordJson.get("password");
+        if (username == null || password == null){
+            return  new Result("fail","null illegal!",false);
+        }
+        if (username.length()<1||username.length()>15){
+            return  new Result("fail","invalid username!",false);
+        }
+        if (password.length()<1||password.length()>15){
+            return  new Result("fail","invalid password!",false);
+        }
+
+        User user  = userService.getUserByUsername(username);
+
+        if (user == null){
+            userService.save(username,password);
+            return new Result("ok","login success",false);
+        }else {
+            return  new Result("fail","user exist",false);
+        }
+}
+
     @PostMapping("/auth/login")
     @ResponseBody
     public Result login(@RequestBody Map<String,Object> usernameAndPasswordJson){
@@ -58,7 +98,7 @@ public class AuthController {
             try{
                 authenticationManager.authenticate(usernamePasswordAuthenticationToken);
                 SecurityContextHolder.getContext().setAuthentication(usernamePasswordAuthenticationToken);
-                return new Result("OK","login success",true,userService.getUserByUsername(username));
+                return new Result("ok","login success",true,userService.getUserByUsername(username));
             }catch (BadCredentialsException e){
                 return new Result("ok","password wrong！",false);
             }
