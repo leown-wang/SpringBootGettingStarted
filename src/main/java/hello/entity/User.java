@@ -1,14 +1,17 @@
 package hello.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.time.Instant;
 
 public class User {
-    Integer id;
-    String username;
-    String password;
-    String avatar;
-    Instant createAt;
-    Instant updateAt;
+    private Integer id;
+    private String username;
+    @JsonIgnore
+    private String password;
+    private String avatar;
+    private Instant createAt;
+    private Instant updateAt;
 
     public User(Integer id, String username,String password) {
         this.id = id;
