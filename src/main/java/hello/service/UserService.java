@@ -26,7 +26,7 @@ public class UserService implements UserDetailsService {
     public void save(String username,String password){
         userMapper.save(username,bCryptPasswordEncoder.encode(password));
     }
-    
+
     public User getUserByUsername(String username){
         return userMapper.findUserByname(username);
     }
