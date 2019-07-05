@@ -48,13 +48,13 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>5.5.0</version>
+            <version>5.3.2</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.5.0</version>
+            <version>5.3.2</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -66,12 +66,6 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
             <version>5.1.8.RELEASE</version>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-engine</artifactId>
-            <version>1.5.0</version>
-            <scope>test</scope>
         </dependency>
 
     </dependencies>
@@ -102,16 +96,16 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
 
-        <!--for unit test-->
+            <!--for unit test-->
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.2</version>
             </plugin>
-<!--            for integration test
-            <plugin>
-                <artifactId>maven-failsafe-plugin</artifactId>
-                <version>2.22.2</version>
-            </plugin>-->
+            <!--            for integration test
+                        <plugin>
+                            <artifactId>maven-failsafe-plugin</artifactId>
+                            <version>2.22.2</version>
+                        </plugin>-->
 
         </plugins>
     </build>

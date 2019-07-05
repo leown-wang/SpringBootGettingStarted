@@ -1,4 +1,4 @@
-# Created at 2019-07-05T16:44:14.237
+# Created at 2019-07-05T17:33:10.827
 java.lang.NoClassDefFoundError: org/junit/platform/commons/PreconditionViolationException
 	at org.apache.maven.surefire.junitplatform.TestPlanScannerFilter.accept(TestPlanScannerFilter.java:53)
 	at org.apache.maven.surefire.util.DefaultScanResult.applyFilter(DefaultScanResult.java:102)

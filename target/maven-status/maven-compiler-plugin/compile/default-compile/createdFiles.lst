@@ -1,9 +1,0 @@
-hello\entity\User.class
-hello\mapper\UserMapper.class
-hello\configuration\WebSecurityConfig.class
-hello\Application.class
-hello\service\UserService.class
-hello\entity\Result.class
-hello\controller\AuthController.class
-hello\service\OrderService.class
-hello\configuration\JavaConfiguration.class
