@@ -37,22 +37,10 @@ Spring Boot 其实就是由 Pivotal 团队提供的一个框架，其设计目�
 
 然后 就交给 IDEA 自动导入依赖包了。
 
-- maven 依赖下载默认使用的是外网，极卡无比，需要在 pom.xml 中添加阿里云镜像仓库。
+- maven 依赖下载默认使用的是外网，极卡无比，需要在 pom.xml 中添加镜像仓库。
 
 ```xml
-  <repositories>
-        <repository>
-            <id>alimaven</id>
-            <name>aliyun maven</name>
-            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
+https://mirrors.163.com/.help/maven.html
 ```
 
 至此，就可以一键 RUN 了！
@@ -103,3 +91,16 @@ https://spring.io/guides/gs/securing-web/
 无论是现在，还是未来，碰到问题，首先挨个检查响应和接口文档是不是完全一致。
 ```
 
+
+
+
+
+## 关于自动化测试和集成开发
+
+单元测试（unit test）
+
+集成测试（integration test）
+
+冒烟测试（smoke test）
+
+回归测试（regression test）
