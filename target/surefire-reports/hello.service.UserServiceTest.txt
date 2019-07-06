@@ -1,7 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: hello.service.UserServiceTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.012 s <<< FAILURE! - in hello.service.UserServiceTest
-testSave  Time elapsed: 0.009 s  <<< ERROR!
-java.lang.NoSuchMethodError: org.mockito.internal.configuration.plugins.Plugins.getMockitoLogger()Lorg/mockito/plugins/MockitoLogger;
-
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.376 s - in hello.service.UserServiceTest
