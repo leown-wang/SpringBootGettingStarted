@@ -25,14 +25,14 @@ class UserServiceTest {
         @Test
         public void  testSave(){
 
-                Mockito.when(mockEncoder.encode("myPassword")).thenReturn("myEncodedPassword");
+            Mockito.when(mockEncoder.encode("myPassword")).thenReturn("myEncodedPassword");
 
-                userService.save("myUser","myPassword");
+            userService.save("myUser","myPassword");
 
-                Mockito.verify(mockMapper).save("myUser","myEncodedPassword");
+            Mockito.verify(mockMapper).save("myUser","myEncodedPassword");
         }
 
-        @Test
+    @Test
         public void testGetUserByUsername(){
 
                 userService.getUserByUsername("myUser");
