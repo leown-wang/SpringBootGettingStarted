@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0c81657a-74a0-417f-9d3e-2fa8ddab5afd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Boot Getting Started.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-Boot Getting Started.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/hello/controller/AuthControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/controller/AuthControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/service/UserServiceTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,7 +47,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4336461">
+    <splitter split-orientation="horizontal" split-proportion="0.38270777">
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="false">
@@ -104,8 +101,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/hello/controller/AuthControllerTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="523">
-                  <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+                <state relative-caret-position="371">
+                  <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -134,8 +131,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/hello/entity/User.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="257">
-                  <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+                <state relative-caret-position="200">
+                  <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -173,8 +170,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/hello/controller/AuthControllerTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="123">
-                  <caret line="71" column="76" selection-start-line="71" selection-start-column="76" selection-end-line="71" selection-end-column="76" />
+                <state relative-caret-position="-54">
+                  <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -666,14 +663,11 @@
       <workItem from="1562317828437" duration="89000" />
       <workItem from="1562317966300" duration="8752000" />
       <workItem from="1562381581257" duration="9506000" />
-      <workItem from="1562461095065" duration="9667000" />
+      <workItem from="1562461095065" duration="12021000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AuthControllerTest - 2019.07.06 at 13h 32m 02s.xml">
-      <configuration name="AuthControllerTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AuthControllerTest - 2019.07.06 at 13h 37m 06s.xml">
       <configuration name="AuthControllerTest" configurationId="JUnit" />
     </history-entry>
@@ -701,9 +695,12 @@
     <history-entry file="AuthControllerTest_returnNotLoginByDefault - 2019.07.07 at 11h 53m 34s.xml">
       <configuration name="AuthControllerTest.returnNotLoginByDefault" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AuthControllerTest_testLogin - 2019.07.07 at 12h 17m 21s.xml">
+      <configuration name="AuthControllerTest.testLogin" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113159000" />
+    <option name="totallyTimeSpent" value="115513000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -716,7 +713,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49902913" weight="0.18297587" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -728,13 +724,13 @@
       <window_info id="Web" order="7" sideWeight="0.5009709" side_tool="true" weight="0.25938338" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.86126006" visible="true" weight="0.1898017" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.86126006" weight="0.5679887" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5594901" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.194051" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.194051" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5636729" side_tool="true" weight="0.33002833" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
@@ -1149,20 +1145,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/entity/User.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/hello/controller/AuthControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        <state relative-caret-position="371">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/hello/controller/AuthControllerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="71" column="76" selection-start-line="71" selection-start-column="76" selection-end-line="71" selection-end-column="76" />
+        <state relative-caret-position="200">
+          <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

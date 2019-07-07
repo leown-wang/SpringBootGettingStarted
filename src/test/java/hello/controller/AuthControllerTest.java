@@ -63,12 +63,7 @@ class AuthControllerTest {
         MvcResult response = mockMvc.perform(post("/auth/login").contentType
                 (MediaType.APPLICATION_JSON_UTF8).content(new ObjectMapper().writeValueAsString(usernamePassword) ))
                 .andExpect(status().isOk()).andExpect(
-                        new ResultMatcher() {
-                            @Override
-                            public void match(MvcResult mvcResult) throws Exception {
-                                Assertions.assertTrue(mvcResult.getResponse().getContentAsString().contains("login success"));
-                            }
-                        }
+                        mvcResult -> Assertions.assertTrue(mvcResult.getResponse().getContentAsString().contains("login success"))
                 ).andReturn();
 
         HttpSession session = response.getRequest().getSession();

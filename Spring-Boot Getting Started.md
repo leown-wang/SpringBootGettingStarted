@@ -104,3 +104,9 @@ https://spring.io/guides/gs/securing-web/
 冒烟测试（smoke test）
 
 回归测试（regression test）
+
+
+
+mock
+
+CI 
