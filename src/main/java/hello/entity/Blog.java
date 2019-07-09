@@ -4,21 +4,20 @@ import java.time.Instant;
 
 public class Blog {
     private Integer id;
-    private Integer userId;
-
-    public Integer getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Integer userId) {
-        this.userId = userId;
-    }
-
+    private User user;
     private String title;
     private String description;
     private String content;
-    private Instant createAt;
-    private  Instant updatedAt;
+    private Instant updatedAt;
+    private Instant createdAt;
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 
     public Integer getId() {
         return id;
@@ -52,19 +51,23 @@ public class Blog {
         this.content = content;
     }
 
-    public Instant getCreateAt() {
-        return createAt;
-    }
-
-    public void setCreateAt(Instant createAt) {
-        this.createAt = createAt;
-    }
-
     public Instant getUpdatedAt() {
         return updatedAt;
     }
 
     public void setUpdatedAt(Instant updatedAt) {
         this.updatedAt = updatedAt;
+    }
+
+    public Instant getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(Instant createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public Integer getUserId() {
+        return user == null ? null : user.getId();
     }
 }
