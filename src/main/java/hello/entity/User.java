@@ -5,24 +5,22 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.time.Instant;
 
 public class User {
-    private Integer id;
-    private String username;
+    Integer id;
+    String username;
     @JsonIgnore
-    private String password;
-    private String avatar;
-    private Instant createAt;
-    private Instant updateAt;
+    String encryptedPassword;
+    String avatar;
+    Instant createdAt;
+    Instant updatedAt;
 
-    public User(Integer id, String username,String password) {
+    public User(Integer id, String username, String encryptedPassword) {
         this.id = id;
         this.username = username;
-        this.password = password;
-        this.avatar = "";
-        this.createAt = Instant.now();
-        this.updateAt = Instant.now();
+        this.encryptedPassword = encryptedPassword;
+        this.avatar = "https://blog-server.hunger-valley.com/avatar/69.jpg";
+        this.createdAt = Instant.now();
+        this.updatedAt = Instant.now();
     }
-
-
 
     public Integer getId() {
         return id;
@@ -40,35 +38,35 @@ public class User {
         this.username = username;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
     public String getAvatar() {
         return avatar;
+    }
+
+    public Instant getCreatedAt() {
+        return createdAt;
+    }
+
+    public Instant getUpdatedAt() {
+        return updatedAt;
+    }
+
+    public String getEncryptedPassword() {
+        return encryptedPassword;
+    }
+
+    public void setEncryptedPassword(String encryptedPassword) {
+        this.encryptedPassword = encryptedPassword;
     }
 
     public void setAvatar(String avatar) {
         this.avatar = avatar;
     }
 
-    public Instant getCreateAt() {
-        return createAt;
+    public void setCreatedAt(Instant createdAt) {
+        this.createdAt = createdAt;
     }
 
-    public void setCreateAt(Instant createAt) {
-        this.createAt = createAt;
-    }
-
-    public Instant getUpdateAt() {
-        return updateAt;
-    }
-
-    public void setUpdateAt(Instant updateAt) {
-        this.updateAt = updateAt;
+    public void setUpdatedAt(Instant updatedAt) {
+        this.updatedAt = updatedAt;
     }
 }
