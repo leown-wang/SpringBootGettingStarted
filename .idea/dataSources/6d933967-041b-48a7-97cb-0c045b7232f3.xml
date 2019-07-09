@@ -1108,40 +1108,83 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="278" parent="2" name="user"/>
-    <column id="279" parent="278" name="id">
+    <table id="278" parent="2" name="blog"/>
+    <table id="279" parent="2" name="user"/>
+    <column id="280" parent="278" name="id">
       <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
+      <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="280" parent="278" name="username">
+    <column id="281" parent="278" name="user_id">
       <Position>2</Position>
-      <DataType>varchar(20)|0s</DataType>
+      <DataType>bigint(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="281" parent="278" name="password">
+    <column id="282" parent="278" name="title">
       <Position>3</Position>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="282" parent="278" name="avatar">
+    <column id="283" parent="278" name="description">
       <Position>4</Position>
-      <DataType>varchar(20)|0s</DataType>
+      <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="283" parent="278" name="created_at">
+    <column id="284" parent="278" name="content">
       <Position>5</Position>
-      <DataType>datetime|0s</DataType>
+      <DataType>text|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="284" parent="278" name="updated_at">
+    <column id="285" parent="278" name="created_at">
       <Position>6</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="285" parent="278" name="PRIMARY">
+    <column id="286" parent="278" name="updated_at">
+      <Position>7</Position>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="287" parent="278" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="288" parent="279" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="289" parent="279" name="username">
+      <Position>2</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="290" parent="279" name="encrypted_password">
+      <Position>3</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="291" parent="279" name="avatar">
+      <Position>4</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="292" parent="279" name="created_at">
+      <Position>5</Position>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="293" parent="279" name="updated_at">
+      <Position>6</Position>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="294" parent="279" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

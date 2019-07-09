@@ -47,8 +47,8 @@ public class AuthController {
     public LoginResult logout() {
         SecurityContextHolder.clearContext();
         return authService.getCurrentUser()
-                .map(user -> LoginResult.success("success", false))
-                .orElse(LoginResult.failure("用户没有登录"));
+                .map(user -> LoginResult.failure("用户没有登录"))
+                .orElse(LoginResult.failure("注销成功"));
     }
 
     @PostMapping("/auth/register")
@@ -91,13 +91,12 @@ public class AuthController {
 
         try {
             authenticationManager.authenticate(token);
-            // 把用户信息保存在一个地方
-            //   Cookie
+
             SecurityContextHolder.getContext().setAuthentication(token);
 
             return LoginResult.success("登录成功", userService.getUserByUsername(username));
-        } catch (BadCredentialsException e) {
-            return LoginResult.failure("密码不正确");
+} catch (BadCredentialsException e) {
+        return LoginResult.failure("密码不正确");
         }
-    }
+        }
 }

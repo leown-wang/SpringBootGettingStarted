@@ -26,7 +26,6 @@ public class BlogService {
 
             int count = blogDao.count(userId);
 
-            // count = 3 / pageSize = 2 / page = 2
             int pageCount = count % pageSize == 0 ? count / pageSize : count / pageSize + 1;
 
             return BlogListResult.success(blogs, count, page, pageCount);
